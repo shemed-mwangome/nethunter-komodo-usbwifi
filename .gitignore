@@ -1,0 +1,8 @@
+# build inputs/outputs (fetched or generated — not source)
+gki/
+lf-fw/
+nethunter-usbwifi.zip
+# built artifacts added into the module template at build time
+module/modules/
+module/system/
+*.ko

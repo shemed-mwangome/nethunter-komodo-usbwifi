@@ -1,0 +1,9 @@
+# Drop `select MAC80211_LEDS` from ath9k so MAC80211_LEDS stays off, matching the
+# vendor mac80211 config (otherwise ieee80211_alloc_hw_nm CRC mismatches and ath9k_htc
+# refuses to load). Apply inside the GKI common tree.
+--- a/drivers/net/wireless/ath/ath9k/Kconfig
++++ b/drivers/net/wireless/ath/ath9k/Kconfig
+@@ (config ATH9K) @@
+-	select MAC80211_LEDS if LEDS_CLASS=y || LEDS_CLASS=MAC80211
+@@ (config ATH9K_HTC) @@
+-	select MAC80211_LEDS if LEDS_CLASS=y || LEDS_CLASS=MAC80211

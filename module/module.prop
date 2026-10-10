@@ -1,0 +1,6 @@
+id=nethunter-usbwifi
+name=NetHunter USB Wi-Fi Drivers (komodo)
+version=v1.0
+versionCode=1
+author=selemani
+description=External USB Wi-Fi adapter drivers (ath9k_htc + rt2x00/mt76/rtlwifi/rtl8xxxu/zd1211 + firmware) for Pixel 9 Pro XL, GKI android14-6.1 r18. Loads monitor/injection-capable drivers at boot.
